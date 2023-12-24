@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="logo.ico" type="image/xicon/" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: url('1.jpg') center/cover no-repeat;
+        }
+
+        .container {
+                 position: absolute;
+            top: 0;
+            right: 10px;
+            max-width: 390px;
+            z-index: 1; 
+        }
+
+         .center-container {
+            position: absolute;
+            top: 50%;
+            left: 54%;
+            transform: translate(-50%, -50%);
+            z-index: 3; 
+        }
+
+        .center-photo {
+            width: 80%;
+            height: auto;
+            display: block;
+        }
+
+
+        .right-photo {
+         width: 100%;
+            height: auto;
+            display: block;
+            background: url(1.jpg);
+        }
+
+        .left-container {
+            position: absolute;
+            top: 0;
+            left: 10px;
+            max-width: 390px;
+            z-index: 1;
+        }
+
+        .left-photo {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            font-style: italic;
+            position: absolute;
+            top: 3%;
+            transform: translateY(-50%);
+            color: beige;
+            z-index: 2;
+        }
+
+    .bottom-text {
+         font-size: 3em;
+            text-align: center;
+            font-style: italic;
+            position: absolute;
+            top: 90%;
+            transform: translateY(-50%);
+            color: beige;
+            z-index: 2;
+        }
+
+
+ @media (max-width: 600px) {
+            .left-container {
+              top: calc(50% + 50px);
+                transform: translateY(-50%);
+                 background: url('1.jpg') center/cover 
+            }
+   .center-photo {
+                position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+                width: 100%; 
+                margin-top: 2350px; 
+                 max-width: 390px;
+            }
+            .right-photo {
+                position: relative;
+                right: auto;
+                 background: url('1.jpg') center/cover no-repeat;
+                margin-top: 700px; 
+
+            }
+             .bottom-text {
+                font-size: 0.8em;
+            }
+        }
+
+
+    </style>
+    <title>ROAĞĞRR</title>
+</head>
+<body>
+    <div class="container">
+        <img src="2.jpg" alt="Sağ Fotoğraf Açıklaması" class="right-photo">
+    </div>
+
+     <div class="center-container">
+            <img src="3.jpg" alt="Orta Fotoğraf Açıklaması" class="center-photo">
+        </div>
+
+    <div class="left-container">
+        <img src="ala.jpg" alt="Sol Fotoğraf Açıklaması" class="left-photo">
+    </div>
+
+    <h1>Aslanoğlu</h1>
+    <div class="bottom-text">Renkli Rüyalar Ötelinde</div>
+</body>
+</html>
